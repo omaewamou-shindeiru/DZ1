@@ -61,7 +61,7 @@ int searchSet(Element **set, char *str) // поиск элемента по ег
 
 void pushSet(Element **set) //вставка нового элемента
 {
-    Element *tmp = malloc(sizeof(set));
+    Element *tmp = malloc(sizeof(Element));
     char *str = enterstr(); // ввод нового элемента
     if(searchSet(set, str) == 0) // если новый элемент не входит во множество, то он вставляется в него
     {
